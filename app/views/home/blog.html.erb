@@ -1,12 +1,16 @@
-<head>
-  <meta name="google-site-verification" content="w515LXsj9krECx_EDYZrJkdG44mVqQ6lFH8kABQZ3bU" />
-  <h1>This is my blog.</h1>
-</head>
-<p>There are many like it, but this one is mine.</p>
-<% if current_user %>
-  Welcome <%= current_user.name %>!
-  <%= link_to "Sign Out", signout_path %>
-<% else %>
-  <%= link_to "Sign in with Twitter", "/auth/twitter" %>
-  <%= link_to "Sign in with Facebook", "/auth/facebook" %>
-<% end %>
+<html>
+  <head>
+    <meta name="google-site-verification" content="w515LXsj9krECx_EDYZrJkdG44mVqQ6lFH8kABQZ3bU" />
+    <h1>This is my blog.</h1>
+  </head>
+  <body>
+    <p>There are many like it, but this one is mine.</p>
+    <% if current_user %>
+      Welcome <%= current_user.name %>!
+      <%= link_to "Sign Out", signout_path %>
+    <% else %>
+      <%= link_to "Sign in with Twitter", "/auth/twitter" %>
+      <%= link_to "Sign in with Facebook", "/auth/facebook" %>
+    <% end %>
+  </body>
+</html>
