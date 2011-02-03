@@ -3,7 +3,7 @@
 
 Rails.application.config.middleware.use OmniAuth::Builder do
   provider :twitter, 'muBfbtD5at102zlPpr61g', 'nCrSgkjEYtNcC0wbadvITgalGsJx34BpEbt10'
-  provider :googleapps, 'stormy-light-324.heroku.com', 'UxIb7thTkLvkJbHfLDDoQqfp'
+  provider :GoogleApps, 'stormy-light-324.heroku.com', 'UxIb7thTkLvkJbHfLDDoQqfp'
 end
 
 # Rails.application.config.middleware.use OmniAuth::Builder do
