@@ -3,8 +3,7 @@ Auth::Application.routes.draw do
 
   get "home/blog"
 
-  match "/auth/twitter/callback" => "sessions#create"
-  match "/auth/facebook/callback" => "sessions#create"
+  match "/auth/:provider/callback" => "sessions#create"
   match "/signout" => "sessions#destroy", :as => :signout
 
   root :to => 'home#blog'
